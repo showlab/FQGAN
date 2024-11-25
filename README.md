@@ -1,4 +1,2 @@
 # FQGAN
-
-Code and model of FQGAN will be released in this repo.
-
+This is the project page of FQGAN
