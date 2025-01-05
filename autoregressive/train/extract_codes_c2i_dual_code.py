@@ -50,7 +50,7 @@ def main(args):
     vq_model.to(device)
     vq_model.eval()
     checkpoint = torch.load(args.vq_ckpt, map_location="cpu")
-    vq_model.load_state_dict(checkpoint["model"])
+    vq_model.load_state_dict(checkpoint["model"], strict=False)
     del checkpoint
 
     # Setup data:
