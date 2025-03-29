@@ -92,7 +92,6 @@ class DinoVisionTower(nn.Module):
 
         return visual_feat_vls
 
-    @torch.no_grad()
     def forward(self, images, semantic_feat):
         images = self.scaling_layer(images)     # -1 ~ 1?
         visual_feat_vls = self.extract_patch_feats(images)
